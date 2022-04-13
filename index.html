@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<main>
+    <br>
+      <br>
+      <h1 id="title"> <img src="https://cdn-icons-png.flaticon.com/512/822/822132.png" id="virus" style="float:left;width:50px;height:50px;" alt="kawaii-virus">COVID-19 Pandemic Consent Form</h1>
+      
+      <p id="description">Thank you for taking your time to answer the form!</p>
+      
+      <form id="survey-form">
+        
+        <label id="name-label" for="name">Full Name</label> 
+        <br>
+       <input id="name" type="text" placeholder="Full name" required>
+        <br>    <br>
+        <label id="email-label" for="email">Email</label>
+        <br>
+        <input id="email" type="email" placeholder="Email address" required>
+        <br>    <br>
+        <label id="number-label" for="number">Age<span class="clue">(optional) </span></label>
+        <br>  
+        <input id="number" type="number" placeholder="Age" min="18" max="80">
+        <br>
+        <br>
+     
+        <label for="role">What is your current role?</label>
+        <br>
+      
+        <select name="roles" id="dropdown">
+          <option value="full-time-job">Full-time job</option>
+          <option value="part-time-job">Part-time job</option>
+          <option value="full-time-student">Full-time student</option>
+          <option value="part-time-student">Part-time student</option>
+          <option value="both-student-job">Both student/job</option>
+          <br>
+        </select>
+        <p> I understand the novel coronavirus causes the disease known as COVID-19 and has a long incubation period during which carriers of the virus may not show symptoms and still be contagious.</p>
+        <label>
+          <input name="user-ans" type="radio" value="yes"> Yes </label>
+            <label>
+          <input name="user-ans" type="radio" value="No"> No </label>
+        
+        <p>I confirm that I am not presenting any of the following symptoms of COVID-19 identified by Ontario Public Health Services: <span class="clue">Select all that apply:</span></p>
+        <label><input type="checkbox" name="prefer" id="input-checkbox" value="fever>38C">Fever > 38C</label>
+        <br>
+        <label><input type="checkbox" name="prefer" id="input-checkbox" value="chills">Chills</label>
+        <br>
+        <label> <input type="checkbox" name="prefer" id="input-checkbox" value="headaches">Headaches</label>
+        <br>
+        <label><input type="checkbox" name="prefer" id="input-checkbox" value="new-cough-or-worsening-chronic-cough">New cough or worsening chronic cough</label>
+        <br>
+        <label><input type="checkbox" name="prefer" id="input-checkbox" value="sore-throat-or-dificulty-swallowing">Sore throat or difficulty swallowing</label>
+        <br>
+        <label><input type="checkbox" name="prefer" id="input-checkbox" value="shortness-of-breath">Shortness of breath</label>
+        <br>
+        <label><input type="checkbox" name="prefer" id="input-checkbox" value="difficulty-breathing">Difficulty breathing</label>
+        <br>
+        <label><input type="checkbox" name="prefer" id="input-checkbox" value="flu-like-symptoms">Flu-like symptoms</label>
+        <br>
+        <label><input type="checkbox" name="prefer" id="input-checkbox" value="runny-nose">Runny nose</label>
+         <br>
+        <label><input type="checkbox" name="prefer" id="input-checkbox" value="loss-of-sense-of-smell-or-taste">Loss of sense of smell or taste</label>
+        <br>
+        <label><input type="checkbox" name="prefer" id="input-checkbox" value="muscle-aches">Muscle aches</label>
+        <br>
+        <label><input type="checkbox" name="prefer" id="input-checkbox" value="unexplained-fatigue-malaise">Unexplained fatigue/malaise</label>
+        <br>
+        <label><input type="checkbox" name="prefer" id="input-checkbox" value="nausea-vomiting-diarrhea-abdominal-pain"> Nausea/vomiting/diarrhea/abdominal pain</label>
+        <br>
+        <label><input type="checkbox" name="prefer" id="input-checkbox" value="pink-eye">Pink eye</label>
+        <br>
+        
+         <p> I confirm I know that there are categories of people who are considered to be high risk. Moreover, I understand the high risk category factors are being 65 years of age or older, heart disease, lung disease, kidney disease, diabetes or any auto-immune disorder or I fall into the following high risk categories</p>
+        <label>
+          <input name="user-ans" type="radio" value="yes"> Yes </label>
+            <label>
+          <input name="user-ans" type="radio" value="no"> No </label>
+        
+        <p>I understand that any travel from any country outside of Canada, including travel by car, air, bus or train, significantly increases my risk of contracting and transmitting the novel coronavirus. Ontario Public Health Services require self-isolation for 14 days from the date a person has returned to Canada.
+    </p>
+        <label>
+          <input name="user-ans" type="radio" value="yes"> Yes </label>
+            <label>
+          <input name="user-ans" type="radio" value="no"> No </label>
+        
+            <p>I understand that Ontario Public Health has asked individuals to maintain physical distancing of at least 2 metres (6 feet).
+    </p>
+        <label>
+          <input name="user-ans" type="radio" value="yes"> Yes </label>
+            <label>
+          <input name="user-ans" type="radio" value="no"> No </label>
+        
+         <p>I verify that I have not been identified as a contact of someone who has tested positive for novel coronavirus or been asked to self-isolate by Ontario Public Health Services, or any other governmental health agency.
+    </p>
+        <label>
+          <input name="user-ans" type="radio" value="yes"> Yes </label>
+            <label>
+          <input name="user-ans" type="radio" value="no"> No </label>
+        <br>
+            <br>
+        <label for="additional-information">Additional Information:</label>
+        <br>
+        <textarea id="input-textarea" name="additional-information" rows="5" cols="50"></textarea>
+        <br>
+        <br>
+        <input id="submit" type="submit" value="Submit" class="submit">
+        
+        
+      </form>
+    
+</body>
+</html>

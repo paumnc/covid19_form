@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&display=swap');
+
+
+body {
+background: linear-gradient(45deg, rgba(102,184,223,1) 0%, rgba(157,199,228,1) 49%, rgba(76,157,196,1) 100%);
+text-align: center;
+margin: 0 auto;
+max-width: 700px;
+font-size: 15px;
+font-family: 'Inria Serif', serif;
+color: #fff;
+}
+
+#title {
+  border-radius: 20px;
+  border: 2px solid #fff;
+  padding: 10px; 
+  width: 600px;
+  height:45px; 
+  margin: auto;
+}
+
+#virus {
+  animation-duration: 2s;
+        animation-iteration-count: infinite;
+  animation-name: bounce-5;
+        animation-timing-function: ease;
+    }
+    @keyframes bounce-5 {
+        0%   { transform: scale(1,1)    translateY(0); }
+        10%  { transform: scale(1.1,.9) translateY(0); }
+        30%  { transform: scale(.9,1.1) translateY(-30px); }
+        50%  { transform: scale(1,1)    translateY(0); }
+        57%  { transform: scale(1,1)    translateY(-7px); }
+        64%  { transform: scale(1,1)    translateY(0); }
+      100% { transform: scale(1,1)    translateY(0); }
+    }
+
+#survey-form {
+  background: rgba(97,169,204,0.3);
+  border-radius: 20px;
+  padding: 20px; 
+  width: 680px;
+  height: auto; 
+  text-align:left;
+  margin: auto;
+}
+
+#input-textarea{
+border-radius: 10px;
+}
+#submit {
+  background: #9dc7e4;
+  border-radius: 20px;
+  border: none;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  font-family: 'Inria Serif', serif;
+  color: #fff;
+  margin: auto;
+  display: block;
+}
+#submit:hover {
+  opacity: 0.5;
+}
